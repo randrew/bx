@@ -252,7 +252,6 @@ namespace bx
 			m_back  = invalid;
 		}
 
-	private:
 		void insertBefore(uint16_t _before, uint16_t _handle)
 		{
 			Link& curr = m_links[_handle];
@@ -295,6 +294,7 @@ namespace bx
 			updateFrontBack(_handle);
 		}
 
+	private:
 		bool isValid(uint16_t _handle) const
 		{
 			return _handle < MaxHandlesT;
